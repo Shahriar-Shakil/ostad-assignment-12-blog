@@ -1,8 +1,8 @@
-import { newestBlog } from "./apis";
+import { blogDetails } from "./apis";
 
-export const getNewestBlog = async () => {
+export const getBlogDetails = async (id) => {
   try {
-    const res = await fetch(newestBlog, { cache: "no-store" });
+    const res = await fetch(blogDetails(id));
     return res.json();
   } catch (error) {
     // This will activate the closest `error.js` Error Boundary

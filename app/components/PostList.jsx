@@ -17,7 +17,7 @@ export default function PostList({ post, aspect }) {
             aspect === "landscape" ? "aspect-video" : "aspect-square"
           )}
         >
-          <Link href={`/blogs/${post.id}`}>
+          <Link href={`/blogs/${post.category_id}/${post.id}`}>
             <Image
               src={post.img}
               blurDataURL={imageBlurData}
@@ -32,7 +32,7 @@ export default function PostList({ post, aspect }) {
           </Link>
         </div>
         <h2 className="mt-2 text-lg font-semibold tracking-normal text-brand-primary dark:text-white">
-          <Link href={`/blogs/${post.id}`}>
+          <Link href={`/blogs/${post.category_id}/${post.id}`}>
             <span className="link-underline link-underline-blue">
               {post.title}
             </span>

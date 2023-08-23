@@ -47,9 +47,11 @@ export default function Navbar() {
                     </Link>
                   ))}
                 </div>
-                <div className="flex justify-between w-full md:w-auto">
-                  <Link className="w-28 " href="/">
-                    Next Blog
+                <div className="flex justify-between w-full md:w-auto items-center">
+                  <Link className="w-32 " href="/">
+                    <div class=" font-bold text-blue-500">
+                      NEXT <span class="text-red-500">13</span> BLOG
+                    </div>
                   </Link>
 
                   <Disclosure.Button

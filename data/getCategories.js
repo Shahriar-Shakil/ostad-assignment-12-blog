@@ -1,8 +1,8 @@
-import { newestBlog } from "./apis";
+import { API_BLOGS_CATEGORIES } from "./apis";
 
-export const getNewestBlog = async () => {
+export const getCategories = async () => {
   try {
-    const res = await fetch(newestBlog, { cache: "no-store" });
+    const res = await fetch(API_BLOGS_CATEGORIES);
     return res.json();
   } catch (error) {
     // This will activate the closest `error.js` Error Boundary

@@ -8,7 +8,7 @@ export default async function Home() {
 
   return (
     <Container>
-      <h3>Read Our Newest Blogs</h3>
+      <h3 className="text-2xl font-semibold  mb-4">Read Our Newest Blogs</h3>
       <div className="grid gap-10 lg:gap-10 md:grid-cols-2 ">
         {data.map((post) => (
           <PostList key={post.id} post={post} aspect="landscape" />
