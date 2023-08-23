@@ -1,10 +1,6 @@
 import ContactForm from "@/components/ContactForm";
 import Container from "@/components/container";
-import {
-  LocationMarkerIcon,
-  MailIcon,
-  PhoneIcon,
-} from "@heroicons/react/outline";
+
 export default function Contact() {
   return (
     <Container>
